@@ -236,6 +236,9 @@ endif (IOS)
 unset(CERES_COMPILE_OPTIONS)
 message("-- Building with C++${CMAKE_CXX_STANDARD}")
 
+# TBB 
+find_package(TBB REQUIRED)
+
 # Eigen.
 # Eigen delivers Eigen3Config.cmake since v3.3.3
 find_package(Eigen3 3.3 REQUIRED)
